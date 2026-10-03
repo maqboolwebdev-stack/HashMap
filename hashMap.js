@@ -115,4 +115,8 @@ export class HashMap {
     }
     return result;
   }
+
+  loadLevel() {
+    return this.size / this.capacity;
+  }
 }
