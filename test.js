@@ -41,7 +41,7 @@ console.log(
 test.set('moon', 'silver');
 
 console.log('--- after moon, size should be grow');
-console.log('length:', test.length(), '| capacity:', test.capacity, '| load:');
+console.log('length:', test.length(), '| capacity:', test.capacity);
 console.log('bucket sizes:', test.buckets.map((b) => b.length).join(','));
 
 // test.remove('hat');
@@ -60,13 +60,13 @@ console.log(test.loadLevel());
 
 // ....Extra credit: hashSet testing------
 
-console.log("\n--- HashSet ---");
+console.log('--- HashSet');
 const set = new HashSet();
-set.add("apple");
-set.add("banana");
-set.add("apple"); // duplicate, ignore
-console.log("length:", set.length());
-console.log("keys:", set.keys());
-console.log("has('banana'):", set.has("banana"));
-console.log("remove('banana'):", set.remove("banana"));
-console.log("keys:", set.keys());
+set.add('apple');
+set.add('banana');
+set.add('apple'); // duplicate, ignore
+console.log('length:', set.length());
+console.log('keys:', set.keys());
+console.log("has('banana'):", set.has('banana'));
+console.log("remove('banana'):", set.remove('banana'));
+console.log('keys:', set.keys());
